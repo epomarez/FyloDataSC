@@ -12,16 +12,37 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body{ background: black;}
   </style>
 </head>
 <body>
 
-  You’ve used 815 GB of your storage
-
-  185 GB Left
+  <div class="contenedorPadre">
+    <div class="fyloContainer">
+      <img src="images/logo.svg" alt="">
+      <div class="opciones">
+        <img src="images/icon-document.svg" alt="">
+        <img src="images/icon-folder.svg" alt="">
+        <img src="images/icon-upload.svg" alt="">
+      </div>
+    </div>
+    <div class="storageContainer">
+      <p>You’ve used 815 GB of your storage</p>
+      <div class="barraMemoria">
+        <div class="barraInterior">
+          <div class="circulo"></div>
+        </div> 
+      </div>
+      <p>0 GB</p> 
+      <p>1000 GB</p>
+      <div class="nubeMemoriaRestante">
+        <p>185 GB Left</p>
+      </div>
+    </div>
+  </div>
   
-  0 GB
-  1000 GB
+
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
