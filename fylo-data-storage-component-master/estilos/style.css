@@ -107,3 +107,41 @@ body{
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 575px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .body{
+        background: url(../images/bg-mobile.png);
+    }
+
+    .contenedorPadre{
+        
+     
+        width: 85%;
+        height: 450px;
+        margin: 28% 8%;
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .fyloContainer{
+        width: 100%;
+        height: 200px;
+    }
+
+    .storageContainer{
+        height: 200px;
+        width: 100%;
+        padding: 10%;
+    }
+
+    .gridStorage{
+        height: 70%;
+    }
+}
