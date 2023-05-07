@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    background: hsl(229, 57%, 11%);
+    background-image:  url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position-y: 250px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(223, 232, 232);
+    font-size: 14px;
+    
+}
+
+.contenedorPadre{
+    margin: 13% 20%;
+    width: 875px;
+    height: 175px;
+
+    display:flex;
+    flex-flow: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.fyloContainer{
+    width: 40%;
+    height: 100%;
+    padding: 4% 15% 3% 3%;
+    border-radius: 10px 100px 10px 10px;
+    
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.opciones{
+    height: 37%;
+    width: 110%;
+    display: grid;
+
+    grid-template-columns: 33% 33% 33%;
+    grid-row: 100%;
+    gap: 6%;
+}
+
+.opciones .iconoSVG{
+
+    padding-top: 10px;
+    height: 90%;
+    width: 75%;
+    border-radius: 8px;
+    background-color: hsl(229, 57%, 11%);
+    
+}
+
+.storageContainer{
+    width: 56%;
+    height: 80%;
+    border-radius: 10px;
+    padding: 4%;
+
+    background-color: hsl(228, 56%, 26%);
+
+}
+
+.gridStorage{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    gap: 3px;
+}
+
+.barraMemoria{
+    background: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    height: 20px;
+    grid-row: 2/3;
+    padding: 4px 4px;
+}
+
+.barraInterior{
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+    height: 12px;
+    width: 81.5%;
+    padding: 1px 2px;
+}
+
+.circulo{
+    float: right;
+    background:hsl(243, 100%, 93%);
+    width: 10px;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.memoria{
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 575px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .body{
+        background: url(../images/bg-mobile.png);
+    }
+
+    .contenedorPadre{
+        
+     
+        width: 85%;
+        height: 450px;
+        margin: 28% 8%;
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .fyloContainer{
+        width: 100%;
+        height: 200px;
+    }
+
+    .storageContainer{
+        height: 200px;
+        width: 100%;
+        padding: 10%;
+    }
+
+    .gridStorage{
+        height: 70%;
+    }
+}
